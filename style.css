@@ -1,11 +1,13 @@
 *{
+    gap: 10px;
     box-sizing: border-box;
     h1{
-        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     }
 
     p{
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family:'Times New Roman', Times, serif;
+        font-size: 100%;
     }
 }
 
@@ -19,19 +21,19 @@
 }
 
 :root{
-    --fonte--: rgb(255, 255, 255);
-    --cor1--: rgb(216, 140, 0);  
-    --cor2--: rgb(224, 208, 135);
-    --sombra--: rgb(0, 0, 0);
-
+    color-scheme: ligth;
+    /* --fonte--: rgb(255, 255, 255); */
+    --cor1--: rgb(216, 166, 0);  
+    --cor2--: rgb(255, 255, 255);
+    --sombra--: rgb(56, 26, 26);
+    --fundo1--: rgb(255, 72, 0);
 }
 
 body{
-    background: linear-gradient(rgb(105, 102, 53) 5%, rgb(134, 68, 10) 90%);
+    background: linear-gradient(rgb(0, 0, 0) 20%, rgb(0, 0, 0) 70%, rgb(0, 0, 0) 95%);
     margin: 0;
     padding: 0;
-    color: rgb(0, 0, 0);
-    text-shadow: 1pt 1pt 3mm black;
+    /* text-shadow: 1pt 1pt 3mm; */
 }
 
 hr{
@@ -62,90 +64,103 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 1pt 3pt 5mm rgba(255, 255, 255, 0.459);
     /* linear-gradient(to bottom, rgb(179, 84, 7) 10%, rgb(105, 102, 53) 90%); */
 
 
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: start;
+    align-items: center;
 
-    color: rgb(243, 206, 41);
+    
+    >#titulo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        color: rgb(243, 206, 41);
+        font-style: oblique;
+        text-shadow: 2px 2px 3px rgb(117, 0, 0) ;
+        /* line-height: 0.8; */
 
-    font-style: oblique;
-    text-shadow: 2px 2px 3px rgb(117, 0, 0) ;
-    font-size: 250%;
-    line-height: 0.8;
-
-    label{
-        font-size: 8mm;
-    }
-
-        >.titulo{
-
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-        }
-        
-            >.logo{
-                width: 30%;
-                height: fit-content;
-
-                display: flex;
-                flex-wrap: nowrap;
+            h2{
+                font-size: 6vw;
             }
+
+            >.desde{
+                font-size: 3vw;
+            }
+        }
+
+    >.logo{
+        width: 30%;
+        height: 40%;
+        margin-right: 5%;
+
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: start;
+        }
 
 }
         
 .infos{
+    color: var(--cor2--);
     
     >.quem{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: flex-start;
+        gap: 10mm;
+        
 
         >#cena{
             width: 30%;
+            margin: 2vw;
+            margin-left: 5vw;
 
             border: 5px;
-            box-shadow: 0mm 1mm 2mm 0mm;
+            box-shadow: 1pt 1pt 3mm rgba(255, 255, 255, 0.623);
         }
 
         >#texto{
+            margin: auto;
+
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: center;
 
-            font-size: x-large;
+            font-size: 3vw;
+            text-align: justify;
 
             >h1{
-                color: var(--fonte--);
+                color: var(--cor1--);
                 text-transform: capitalize;
-                text-shadow: 1pt 1pt 3mm var(--sombra--);
                 font-size: 8mm;
             }
         }
     }
 
     >.objtv{
+        margin: auto;
         text-align: right;
         margin-right: 20%;
-        color: var(--fonte--);
-        text-shadow: 1pt 1pt 2mm var(--sombra--);
+        color: var(--cor1--);
         font-size: xx-large;
     }
 
     >.missao{
-        margin: 5%;
+        margin: auto;
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-start;
         align-items: stretch;
 
         >#cena{
+            margin: auto;
             width: 50%;
             height: auto;
             max-height: 20%;
@@ -156,7 +171,7 @@ header{
             justify-content: space-between;
 
             border: 5px;
-            box-shadow: 0mm 1mm 2mm 0mm;
+            box-shadow: 0mm 1mm 2mm 0mm rgba(255, 255, 255, 0.623);
 
             >#cena1{
                 
@@ -168,6 +183,11 @@ header{
                 -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 100%, transparent 20%);
                 mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 100%, transparent 90%);
             }
+            >#cena3{
+                
+                -webkit-mask-image: linear-gradient(to bottom, transparent 10%, black 90%, black 100%, transparent 20%);
+                mask-image: linear-gradient(to bottom, transparent 0%, black 0%, black 30%, transparent 90%);
+            }
         }
 
         >#texto{
@@ -176,41 +196,42 @@ header{
 
             width: 50%;
 
-            padding: 5%;
+            /* padding: 5%; */
+            margin: 4vw;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             justify-content: space-around;
             align-items: center;
 
-            font-size: 15pt;
+            font-size: 3vw;
 
             >p>b{
-                font-size: 20pt;
+                font-size: 5vw;
             }
         }
     }
 
     >.lideres{
+        margin: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        align-items: flex-start;
+        gap: 10mm;
 
         >#cena{
             width: 30%;
             height: 50%;
 
             border: 5px;
-            box-shadow: 1pt 1pt 3mm ;
+            box-shadow: 1pt 1pt 3mm rgba(255, 255, 255, 0.589);
         }
 
-    
         >#texto{
             >#topic{
-                color: var(--fonte--);
-                text-shadow: 1pt 1pt 3mm var(--sombra--);
-                font-size: 8mm;
+                color: var(--cor1--);
+                /* text-shadow: 1pt 1pt 3mm var(--sombra--); */
+                font-size: 6vw;
             }
 
 
@@ -219,10 +240,8 @@ header{
 }
 
 .chama_obra{
-    padding: 0.5%;
     height: 2%;
     width: 100%;
-    border: 0.3%;
     
     display: flex;
     flex-direction: row;
@@ -235,10 +254,11 @@ header{
     font-family: fantasy;
     
     text-align: center;
-    font-size: xx-large;
+    font-size: 8vw;
 }
 
 .all_obra{
+    margin: 5mm;
     display: flex;
     flex-wrap: wrap;
     gap: 20pt;
@@ -248,10 +268,11 @@ header{
         flex: 1 1 70vh;
 
         border: 5pt;
-        border-style: double;
-        border-color: rgb(16, 0, 61);
+        border-style: ridge;
+        border-color:rgba(29, 27, 23, 0.103);
         border-radius: 5%;
-        background: linear-gradient(to bottom, rgba(204, 189, 105, 0.493) 30%, rgb(13, 29, 29, 0.678) 100%);
+        /* background: linear-gradient(to top, black 5%, rgba(112, 0, 0, 0.774) 20%, rgba(151, 60, 0, 0.774) 40%, rgba(112, 0, 0, 0.774) 90%, black 100%); */
+        background: linear-gradient(to bottom, black 10%, rgb(150, 28, 28) 40%, black 100%);
         color: rgb(255, 255, 255);
 
         font-size: 120%;
@@ -275,7 +296,10 @@ header{
                     >.nomeo{
                         text-align: center;
                         margin: 2%;
-                        font-size: 5mm;
+
+                        h1{
+                            font-size: 4vw;
+                        }
                     }
 
                     >.descrito{
@@ -299,11 +323,10 @@ header{
                         border-color: rgb(122, 105, 58);
 
                     >#resumo{
+                        text-align: justify;
                         margin-left: 20px;
                         display: flex;
-                        flex-direction: column;
                         flex-wrap: wrap;
-                        align-items: flex-start;
                         }
 
                     }
@@ -342,28 +365,95 @@ header{
   
 }
 
+details{
+    margin: 5px;
+
+    h3{
+        color: aliceblue;
+    }
+
+    summary{
+        color: var(--cor1--);
+        text-shadow: 1pt 1pt 3mm rgb(56, 9, 3);
+        cursor: pointer;
+        list-style: none;
+
+        background: linear-gradient(to right, rgb(20, 33, 44) 30%, black 90%);
+        
+
+        h1{
+            padding: 15px;
+            font-size: xx-large;
+            text-align: center;
+            margin: 10px;
+        }
+
+    }
+    
+    >.galeria{
+        display: flex;
+        flex-direction: column;
+
+        .card{
+            flex: 1 1 20%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:space-evenly;
+            align-items: start;
+
+
+            background-color: rgb(20, 33, 44);
+            box-shadow: inset 15mm 15mm 90mm black;
+            width: 100%;
+            border-radius: 4%;
+
+            img,
+            video{
+                margin: 5px;
+                height: 35vw;
+                aspect-ratio: 10 / 15;
+                box-shadow: 1pt 1pt 3mm black;
+                object-fit: cover;
+                border-radius: 5%;
+            }
+
+        }
+
+    }
+}
+
 footer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    text-align: left;
+    text-shadow: 1pt 1pt 2mm black;
+
     >.final{
         margin: 3vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
-        color: aliceblue;
-        text-align: left;
-        text-shadow: 1pt 1pt 2mm black;
+
         >#lema{
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             font-size: 350%;
             font-family:fantasy;
+            text-align: center;
 
             >#lema1{
+                align-items: center;
                 font-family: fantasy;
                 color: rgb(255, 208, 0);
                 text-shadow: 1pt 1pt 2mm rgb(0, 0, 0);
                 font-size: 150%;
+                text-align: center;
             }
         }
 
@@ -383,5 +473,19 @@ footer{
 
             }
         }
+    }
+
+    >.ctts{
+        margin: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        a{
+            color: aliceblue;
+            text-align: center;
+            font-size: small;       
+        }
+
     }
 }
