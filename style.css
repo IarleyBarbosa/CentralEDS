@@ -228,10 +228,13 @@ header{
         }
 
         >#texto{
+            p{
+                font-size: 3vw;
+            }
+
             >#topic{
-                color: var(--cor1--);
-                /* text-shadow: 1pt 1pt 3mm var(--sombra--); */
                 font-size: 6vw;
+                color: var(--cor1--);              
             }
 
 
@@ -383,8 +386,13 @@ details{
 
         h1{
             padding: 15px;
-            font-size: xx-large;
-            text-align: center;
+            font-size: 6vw;
+            text-align: start;
+            margin: 10px;
+        }
+
+        h2{
+            text-align: end;
             margin: 10px;
         }
 
