@@ -23,7 +23,7 @@
 :root{
     color-scheme: ligth;
 
-    --fundo--: #ecc100;
+    --fundo--: #6a1b11;
     --caixa--: #0f1b2e;
     --topico--: #ffffff;
     --fontg--: rgb(70, 57, 57)
@@ -120,7 +120,7 @@ header{
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
     gap: 10px;
     max-width: 80%;
     max-height: 30%;
@@ -172,7 +172,8 @@ header{
 }
 
 .lider{
-    padding: 5vw;
+    margin: 20px;
+    padding: 5px;
 
     display: flex;
     flex-direction: row;
@@ -211,6 +212,7 @@ header{
 }
 
 .chama_obra{
+    margin: 20px;
     height: 2%;
     width: 100%;
     
@@ -223,14 +225,14 @@ header{
     color: rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     box-shadow: 1pt 0pt 1mm black;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     
     text-align: center;
     font-size: 8vw;
 }
 
 .all_obra{
-    margin: 5mm;
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20pt;
@@ -238,15 +240,6 @@ header{
 
     >.obra{
         flex: 1 1 70vh;
-
-        /* border: 5pt;
-        border-style: ridge;
-        border-color:rgba(29, 27, 23, 0.103);
-        border-radius: 5%; */
-
-        /* background: linear-gradient(to top, black 5%, rgba(112, 0, 0, 0.774) 20%, rgba(151, 60, 0, 0.774) 40%, rgba(112, 0, 0, 0.774) 90%, black 100%); */
-        /* background: linear-gradient(to bottom, black 10%, white 40%, black 100%); */
-
         background-color: rgb(255, 255, 255);
         box-shadow: 1pt 1pt 3mm black;
         color: rgb(0, 0, 0);
@@ -341,8 +334,12 @@ header{
   
 }
 
+.all_obra::-webkit-scrollbar{
+    display: none;
+}
+
 details{
-    margin: 5px;
+    margin: 20px;
 
 
     h3{
@@ -350,17 +347,18 @@ details{
     }
 
     summary{
+        padding: 2px;
         box-shadow: 1pt 1pt 3mm black;
         color: var(--fontg--);
         /* text-shadow: 1pt 1pt 3mm var(--fundo--); */
         cursor: pointer;
         list-style:lower-roman;
-        background: rgba(255, 255, 255, 0.774);
+        background: rgb(255, 255, 255);
         
 
         h1{
             padding: 15px;
-            font-size: 6vw;
+            font-size: 25px;
             text-align: start;
             margin: 10px;
         }
@@ -387,7 +385,7 @@ details{
             align-items: start;
 
 
-            background-color: rgba(255, 255, 255, 0.753);
+            background-color: rgb(255, 255, 255);
             box-shadow: 1pt 1pt 3mm black;
             width: 100%;
 
