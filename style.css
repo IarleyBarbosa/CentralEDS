@@ -72,9 +72,6 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    box-shadow: 1pt 3pt 5mm black;
-    /* linear-gradient(to bottom, rgb(179, 84, 7) 10%, rgb(105, 102, 53) 90%); */
-
 
     display: flex;
     flex-direction: row-reverse;
@@ -112,8 +109,19 @@ header{
         }
 
 }
-        
-.infos{
+
+.refs{
+    display: flex;
+    justify-content: space-around;
+    padding: 6px;
+    box-shadow: 1pt 1pt 3mm;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#infos{
     margin: 20px;
     color: var(--cor2--);
     display: flex;
@@ -165,13 +173,11 @@ header{
     }  
 }
 
-
-
-.infos::-webkit-scrollbar{
+#infos::-webkit-scrollbar{
     display: none;
 }
 
-.lider{
+#lider{
     margin: 20px;
     padding: 5px;
 
@@ -211,7 +217,7 @@ header{
     }
 }
 
-.chama_obra{
+#chama_obra{
     height: 2%;
     width: 90%;
     
@@ -461,7 +467,6 @@ footer{
         a{
             color: aliceblue;
             text-align: center;
-            font-size: small;       
         }
 
     }
