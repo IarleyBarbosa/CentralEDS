@@ -399,9 +399,10 @@ html{
             display: flex;
             align-items: center;
             padding: 1vh;         
-            background-color: rgb(255, 255, 255);
+            background-color: transparent;
+            text-decoration: underline;
             box-shadow: 1pt 1pt 2mm black;
-            color: rgb(0, 0, 0);
+            color: rgb(4, 0, 56);
             text-align: center;
 
             font-size:medium;
@@ -427,6 +428,7 @@ details{
         cursor: pointer;
         list-style: none;
         text-align: start;
+        box-shadow: 0pt 10pt 10pt 0pt rgb(0, 0, 0);
 
         p{
             color: black;
