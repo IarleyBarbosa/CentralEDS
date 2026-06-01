@@ -58,11 +58,6 @@ b{
     text-align: center;
 }
 
-/* head{
-    margin: 0;
-    width: 10vw;
-} */
-
 header{
     /* width: 100vw;
     height: 10cp; */
@@ -116,8 +111,8 @@ header{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px;
-    height: 50px;
+    padding: 5px;
+    height: 10%;
     box-shadow: 1pt 1pt 3mm;
 
     font-size: 2vw;
@@ -236,6 +231,7 @@ html{
     min-height: 80px;
     height: auto;
     padding: 10px;
+    white-space: nowrap;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -310,8 +306,6 @@ html{
     flex-wrap: wrap;
     justify-content: space-around;
 
-
-
     >.obra{
         width: 100%;
         box-sizing: border-box;
@@ -373,10 +367,10 @@ html{
             display: flex;
             align-items: center;
             padding: 1vh;         
-            background-color: transparent;
-            text-decoration: underline;
+            background-color: rgba(122, 34, 34, 0.815);
             box-shadow: 1pt 1pt 2mm black;
-            color: rgb(179, 179, 179);
+            border-radius: 5%;
+            color: rgb(0, 0, 0);
             text-align: center;
             border: transparent;
 
@@ -396,31 +390,30 @@ details{
     flex-direction: column;
     align-content: center;
 
-
     summary{
         color: rgb(255, 255, 255);
         text-shadow: 1pt 1pt 3mm rgb(0, 0, 0);
         cursor: pointer;
         list-style: none;
         text-align: start;
-        box-shadow: 0pt 10pt 10pt 0pt rgb(0, 0, 0);
 
         p{
             color: black;
         }
 
         h1{
-            padding: 5%;
+            box-shadow: 0pt 10pt 10pt 0pt rgb(66, 18, 9);
+            padding: 1%;
             font-size: 200%;
-            text-align: start;
-            text-decoration: underline;
+            text-align: end;
+            margin-right: 10%
         };
 
         h2{
-            padding: 3vw;
+            padding: 1%;
             text-align: start;
-            margin: 10px;
             font-size: 150%;
+            margin-left: 5%
         };
 
     };
@@ -438,7 +431,7 @@ details{
             align-items: start;
 
 
-            background-color: rgb(255, 255, 255);
+            background-color: rgba(122, 34, 34, 0.815);
             box-shadow: 1pt 1pt 3mm black;
             width: 100%;
 
