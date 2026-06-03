@@ -297,7 +297,7 @@ html{
 .all_obra{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px , 1.5vh));
-    gap: 10vh;
+    gap: 5vh;
 
     margin-inline: 8%;
 
