@@ -180,6 +180,21 @@ html{
     display: none;
 }
 
+#participar{
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    font-size: 150%;
+
+    width: 60%;
+
+    background-color: #6a1b11;
+    color: rgb(255, 226, 226);
+    border-radius: 15%;
+    padding: 1%;
+    box-shadow: 1pt 1pt 3mm black;
+}
+
 #lider{
     margin: 20px;
     padding: 5px;
@@ -452,6 +467,62 @@ details{
 
         }
 
+    }
+}
+
+.intro_convt{
+    color: #ffffff;
+    text-shadow: 1pt 1pt 3mm black;
+    padding: 5%;
+
+    h1{
+    text-align: center;
+    font-size: 3vw;
+    }
+
+}
+
+.categorias{
+    padding: 5%;
+    color: rgb(255, 255, 255);
+    text-shadow: 1pt 1pt 3mm black;
+    text-transform: uppercase;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 5%;
+        background-color: transparent;
+        height: 15vw;
+
+        box-shadow: 1pt 1pt 3mm rgb(0, 0, 0);
+        border-radius: 5%;
+
+        h1{
+            text-align: center;
+            padding: auto;
+            font-size: 2vw;
+        }
+    }
+}
+
+.fale_conosco{
+    color: #ffffff;
+    text-align: center;
+
+    h1{
+        font-size: 5vw;
+    };
+
+    p{
+        font-size: 3vw;
     }
 }
 
