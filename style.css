@@ -126,12 +126,13 @@ html{
     margin: 20px;
     color: var(--cor2--);
     display: flex;
+    justify-self: center;
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     gap: 10px;
-    width: 60%;
+    width: 90%;
     height: 60%;
     min-height: 190px;
     outline: none;
