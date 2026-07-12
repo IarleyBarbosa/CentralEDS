@@ -122,8 +122,12 @@ html{
     scroll-behavior: smooth;
 }
 
+.infos-carrosel{
+    position: relative;
+    width: 100%;
+}
+
 #infos{
-    margin: 20px;
     color: var(--cor2--);
     display: flex;
     justify-self: center;
@@ -131,16 +135,14 @@ html{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    gap: 10px;
     width: 90%;
     height: 60%;
     min-height: 190px;
     outline: none;
     size-adjust: contain;
   
-
     .infores{
-        padding: 5vw;
+        padding: 3vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -155,7 +157,7 @@ html{
         background-repeat: no-repeat;
         box-shadow: 8px 0 8px -5px black;
 
-        color: white;
+        color: rgb(255, 255, 255);
         text-shadow: 1pt 1pt 3mm black;
         font-size: 4vw;
         text-align: right;
@@ -163,13 +165,10 @@ html{
             #topic{
                 font-size: 6vw;
                 text-align: left;
-
             }
     
             >#ult{
-                border-left: 2px solid rgb(255, 255, 255);
-                padding-left: 5vw;
-                color: rgb(255, 255, 255);
+                border-left: 2px rgba(255, 255, 255, 0.548);
             }
 
     }  
