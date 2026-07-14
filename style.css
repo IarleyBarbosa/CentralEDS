@@ -265,11 +265,6 @@ html{
     font-size: 5vw;
 }
 
-.carrosel-geral{
-    position: relative;
-    width: 100%;
-}
-
 .all_obra{
     margin-inline: 8%;
 
@@ -330,25 +325,6 @@ html{
                 }
             }
     }
-}
-
-.dots{
-    display: flex;
-    justify-content: center;
-    gap: 5vw;
-}
-
-.dots button{
-    width: 2vw;
-    height: 2vw;
-    border-radius: 50%;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    cursor: pointer;
-}
-
-.dots button.active{
-    background-color: #ffc72e;
 }
 
 .pdf{
