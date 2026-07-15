@@ -147,7 +147,7 @@ html{
         flex-direction: column;
         justify-content: center;
 
-        flex: 0 0 100% ;
+        flex: 0 0 90% ;
         max-height: 50vw;
         box-sizing: border-box;
         scroll-snap-align: start;
@@ -266,6 +266,8 @@ html{
 }
 
 .all_obra{
+    transform: scale(0.75);
+    transform-origin: top;
     margin-inline: 8%;
 
     display: flex;
@@ -278,7 +280,7 @@ html{
 
     >.obra{
         box-sizing: border-box;
-        flex: 0 0 100%;
+        flex: 0 0 90%;
         scroll-snap-align: start;
 
         background-color: rgb(255, 255, 255);
@@ -303,14 +305,16 @@ html{
                     >.nomeo{
                         text-align: center;
                         display: flex;
+                        flex-direction: column;
                         justify-content: center;
-                        >h1{
+                        h1{
                             font-size: 5vw;
                         }
                     }
 
                     >.descrito{
                         display: flex;
+                        flex-direction: column;
                         justify-content: end;
                         text-align: right;
 
