@@ -266,8 +266,6 @@ html{
 }
 
 .all_obra{
-    transform: scale(0.75);
-    transform-origin: top;
     margin-inline: 8%;
 
     display: flex;
@@ -279,6 +277,7 @@ html{
     size-adjust: contain;
 
     >.obra{
+        width: 90%;
         box-sizing: border-box;
         flex: 0 0 90%;
         scroll-snap-align: start;
